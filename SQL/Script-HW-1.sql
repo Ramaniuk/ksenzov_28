@@ -29,7 +29,7 @@ select name from students where created_on = '2021-03-26 00:00:00';
 select name from students where name like '%Анна%';
 
  --11. Вывести пользователей где в имени в конце есть 8--
-select name from students where name like '%8%';
+select name from students where name like '%8';
 
  --12. Вывести пользователей где в имени в есть буква а--
 select name from students where name like '%а%';
@@ -71,7 +71,7 @@ select name from students where id>=137;
 select name from students where id>180 and id < 190;
 
  --25. Вывести пользователя у которых id между 180 и 190--
-select name from students where id>180 and id < 190;
+select name from students where id between 180 and 190;
 
  --26. Вывести пользователей где password равен 12333, 1m313, 123313--
 select password from students where password in ('12333', '1m313', '123313');
